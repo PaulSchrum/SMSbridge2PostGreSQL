@@ -1,0 +1,15 @@
+{ "_id" : "5qgK8veLbaqhR6Y9S", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "26m Waverider", "dateTime" : { "$date" : "2018-03-29T17:17:34.758-0400" } }
+{ "_id" : "DDuNWg9FPvpY7RPpx", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:12:31.297-0400" } }
+{ "_id" : "EqZf3eiTYhYszCQ8e", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:16:23.043-0400" } }
+{ "_id" : "Fe4efahzbRZo64r6q", "userName" : "admin@localuser.com", "action" : "Deleted", "type" : "Station", "name" : "Waverider 17m", "dateTime" : { "$date" : "2018-03-29T17:03:46.648-0400" } }
+{ "_id" : "G463wYTmXWy3aQtwf", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:19:16.783-0400" } }
+{ "_id" : "HeRx5QbqdfZibcKS3", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Project", "name" : "USACE Field Research Facility", "dateTime" : { "$date" : "2018-03-29T16:52:09.616-0400" } }
+{ "_id" : "XqTwZtqmRrk7fytLb", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:26:36.608-0400" } }
+{ "_id" : "frRdgtB7qPLfrBDno", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Station", "name" : "FRF - Atlantic Ocean", "dateTime" : { "$date" : "2018-03-29T17:18:45.375-0400" } }
+{ "_id" : "ft6DJJW5iPpq2z3rh", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:25:32.952-0400" } }
+{ "_id" : "g3jYmH9A84qW3iFyf", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "dateTime" : { "$date" : "2018-03-29T17:15:49.727-0400" } }
+{ "_id" : "iBbGL9TQGbQhuPAoW", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Station", "name" : "Waverider 17m", "dateTime" : { "$date" : "2018-03-29T17:02:32.884-0400" } }
+{ "_id" : "qzB8K8niPjxPgpRK7", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "26m Waverider", "dateTime" : { "$date" : "2018-03-29T17:19:03.585-0400" } }
+{ "_id" : "sTGkRzBR75dRLQpDk", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Station", "name" : "FRF - Atlantic Ocen", "dateTime" : { "$date" : "2018-03-29T17:08:28.423-0400" } }
+{ "_id" : "xXR9RNkhQs82uWCYF", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:26:27.713-0400" } }
+{ "_id" : "zPdPcCpBykYXMjTtw", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Gage", "name" : "26m Waverider", "dateTime" : { "$date" : "2018-03-29T17:14:45.097-0400" } }

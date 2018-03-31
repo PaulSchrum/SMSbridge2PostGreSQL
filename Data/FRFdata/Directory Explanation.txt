@@ -1,0 +1,5 @@
+File "frf - Original.json " is the first file FRF (the client) sent to me (Paul). It had some issues, so I cleaned it up by making the new file, "frf_01.json".
+
+frf_01.json is what I worked with originally to develop my analysis and Entity Relation Diagram.
+
+On 31 March 2018 Mike Forte (of FRF) sent me another dataset which I can use to simulate updates for the purpose of development.  All of this data is in ./dataset20180331.
