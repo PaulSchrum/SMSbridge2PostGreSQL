@@ -1,0 +1,28 @@
+{ "_id" : "55GYbLJGazZ6Q6LYv", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Gage", "name" : "End of Pier Anemometer", "dateTime" : { "$date" : "2018-04-02T13:33:00.600-0400" } }
+{ "_id" : "5qgK8veLbaqhR6Y9S", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "26m Waverider", "dateTime" : { "$date" : "2018-03-29T17:17:34.758-0400" } }
+{ "_id" : "7CCoDvgXQBCpuscQX", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Gage", "name" : "Bethany Beach DWG", "dateTime" : { "$date" : "2018-04-02T13:20:43.237-0400" } }
+{ "_id" : "7XCJ6P26EoBMBQ3ss", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Activity", "name" : "Calibrate 26m waverider", "dateTime" : { "$date" : "2018-04-02T12:12:07.014-0400" } }
+{ "_id" : "9bQpMp38qa8mvcsaM", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Project", "name" : "USACE Wilmington District", "dateTime" : { "$date" : "2018-04-02T13:04:59.970-0400" } }
+{ "_id" : "DDuNWg9FPvpY7RPpx", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:12:31.297-0400" } }
+{ "_id" : "EqZf3eiTYhYszCQ8e", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:16:23.043-0400" } }
+{ "_id" : "FcCfwPazRc2aWMBb7", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Activity", "name" : "WaveriderDeploy", "dateTime" : { "$date" : "2018-04-02T12:09:18.614-0400" } }
+{ "_id" : "Fe4efahzbRZo64r6q", "userName" : "admin@localuser.com", "action" : "Deleted", "type" : "Station", "name" : "Waverider 17m", "dateTime" : { "$date" : "2018-03-29T17:03:46.648-0400" } }
+{ "_id" : "G463wYTmXWy3aQtwf", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:19:16.783-0400" } }
+{ "_id" : "HeRx5QbqdfZibcKS3", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Project", "name" : "USACE Field Research Facility", "dateTime" : { "$date" : "2018-03-29T16:52:09.616-0400" } }
+{ "_id" : "Hn7ybmbf4h6E4aFJd", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Station", "name" : "Delaware - Atlantic Ocean", "dateTime" : { "$date" : "2018-04-02T13:14:57.035-0400" } }
+{ "_id" : "JE6gxN5kiHvHHgPqR", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Gage", "name" : "Ocean City -South DWG", "dateTime" : { "$date" : "2018-04-02T13:23:02.921-0400" } }
+{ "_id" : "LjfovjWgQHLHjfyqr", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Station", "name" : "Maryland - Ocean", "dateTime" : { "$date" : "2018-04-02T13:16:47.038-0400" } }
+{ "_id" : "XqTwZtqmRrk7fytLb", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:26:36.608-0400" } }
+{ "_id" : "YQBv2BK6DPptwMqJj", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Gage", "name" : "Wilmington Harbor Waverider", "dateTime" : { "$date" : "2018-04-02T13:29:15.666-0400" } }
+{ "_id" : "YqusSWpsq8kNXmNYg", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Project", "name" : "USACE Baltimore District", "dateTime" : { "$date" : "2018-04-02T13:06:55.864-0400" } }
+{ "_id" : "Z5u3QR5a4kCHho6Hy", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Project", "name" : "USACE Philadelphia District", "dateTime" : { "$date" : "2018-04-02T13:10:02.335-0400" } }
+{ "_id" : "bazupWbyqX5jKY6RR", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Station", "name" : "Wilmington - Atlantic Ocean", "dateTime" : { "$date" : "2018-04-02T13:26:56.555-0400" } }
+{ "_id" : "bdwbprD2tmgzyrg85", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Station", "name" : "FRF - Pier", "dateTime" : { "$date" : "2018-04-02T13:01:59.748-0400" } }
+{ "_id" : "frRdgtB7qPLfrBDno", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Station", "name" : "FRF - Atlantic Ocean", "dateTime" : { "$date" : "2018-03-29T17:18:45.375-0400" } }
+{ "_id" : "ft6DJJW5iPpq2z3rh", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:25:32.952-0400" } }
+{ "_id" : "g3jYmH9A84qW3iFyf", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "dateTime" : { "$date" : "2018-03-29T17:15:49.727-0400" } }
+{ "_id" : "iBbGL9TQGbQhuPAoW", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Station", "name" : "Waverider 17m", "dateTime" : { "$date" : "2018-03-29T17:02:32.884-0400" } }
+{ "_id" : "qzB8K8niPjxPgpRK7", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "26m Waverider", "dateTime" : { "$date" : "2018-03-29T17:19:03.585-0400" } }
+{ "_id" : "sTGkRzBR75dRLQpDk", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Station", "name" : "FRF - Atlantic Ocen", "dateTime" : { "$date" : "2018-03-29T17:08:28.423-0400" } }
+{ "_id" : "xXR9RNkhQs82uWCYF", "userName" : "admin@localuser.com", "action" : "Updated", "type" : "Gage", "name" : "17m Waverider", "dateTime" : { "$date" : "2018-03-29T17:26:27.713-0400" } }
+{ "_id" : "zPdPcCpBykYXMjTtw", "userName" : "admin@localuser.com", "action" : "Created", "type" : "Gage", "name" : "26m Waverider", "dateTime" : { "$date" : "2018-03-29T17:14:45.097-0400" } }
