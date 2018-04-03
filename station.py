@@ -1,3 +1,8 @@
+'''
+Station class represents a sensor platform station.
+All data is expected to come from a json entity which was originally created
+   via a MongoDB json dump from FRF's SMS database.
+'''
 
 import os, json
 
