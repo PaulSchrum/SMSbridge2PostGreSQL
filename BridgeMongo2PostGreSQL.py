@@ -10,7 +10,7 @@ import os
 print 'imports complete'
 
 mxd = None
-mxdPath = r'D:\NCSU\201801 Spring 2018\GIS 590 Capstone Project\Sandbox\attempt 2\arcmapStuff\Testbed.mxd'
+mxdPath = r'D:\SourceModules\Python\SMSbridge2PostGreSQL\Data\arcmapStuff\Testbed.mxd'
 lyrStationsName = 'Stations'
 tblGages = 'tbl_gages'
 tblStatuses = 'tbl_statuses'
