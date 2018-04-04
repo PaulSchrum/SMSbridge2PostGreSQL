@@ -5,24 +5,25 @@ All data is expected to come from a json entity which was originally created
 '''
 
 import os, json
+from frfObjectBase import FrfObjectBase
 
-class Station():
+class Station(FrfObjectBase):
     def __init__(self, rowStr):
         aDict = json.loads(rowStr)
         self.id = aDict['_id']
-        self.project = aDict['project']
-        self.projectId = aDict['projectId']
-        self.stationName = aDict['stationName']
-        self.stationNumber = aDict['stationNumber']
-        self.stationLoc = aDict['stationLoc']
-        self.owner = aDict['owner']
-        self.description = aDict['description']
-        self.status = aDict['status']
-        self.lat = float(aDict['lat'])
-        self.lon = float(aDict['lon'])
-        self.waterDepth = aDict['waterDepth']
-        self.createdAt = aDict['createdAt']
-        self.createdBy = aDict['createdBy']
+        self.project = aDict.get('project', None)
+        self.projectId = aDict.get('projectId', None)
+        self.stationName = aDict.get('stationName', None)
+        self.stationNumber = aDict.get('stationNumber', None)
+        self.stationLoc = aDict.get('stationLoc', None)
+        self.owner = aDict.get('owner', None)
+        self.description = aDict.get('description', None)
+        self.status = aDict.get('status', None)
+        self.lat = float(aDict.get('lat', '0.0'))
+        self.lon = float(aDict.get('lon', '0.0'))
+        self.waterDepth = aDict.get('waterDepth', '0.0')
+        self.createdAt = aDict.get('createdAt', None)
+        self.createdBy = aDict.get('createdBy', None)
 
 def GetAllStationsDict(pathFN):
     returnDict = {}

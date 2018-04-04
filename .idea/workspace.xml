@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd9d9d83-c93f-4738-a047-690b3fb9e0eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gage.py" afterPath="$PROJECT_DIR$/gage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/station.py" afterPath="$PROJECT_DIR$/station.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,31 +11,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="gage.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/gage.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="125">
-                    <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                    <folding>
-                      <element signature="e#180#195#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BridgeMongo2PostGreSQL.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BridgeMongo2PostGreSQL.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BridgeMongo2PostGreSQL.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-75">
@@ -59,12 +37,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="station.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="station.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/station.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="100">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+              <folding>
+                <element signature="e#190#205#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#180#195#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,10 +114,14 @@
     <findStrings>
       <find>rowStr</find>
       <find>aDict</find>
+      <find>ct['</find>
+      <find>']</find>
     </findStrings>
     <replaceStrings>
       <replace>aDict</replace>
       <replace>aDict.get(</replace>
+      <replace>ct.get('</replace>
+      <replace>', None)</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -136,9 +132,9 @@
       <list>
         <option value="C:/gispy/scratch/bufferallv1.py" />
         <option value="$PROJECT_DIR$/BridgeMongo2PostGreSQL.py" />
-        <option value="$PROJECT_DIR$/station.py" />
         <option value="$PROJECT_DIR$/frfObjectBase.py" />
         <option value="$PROJECT_DIR$/gage.py" />
+        <option value="$PROJECT_DIR$/station.py" />
       </list>
     </option>
   </component>
@@ -193,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gage">
+  <component name="RunManager" selected="Python.station">
     <configuration name="gage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -234,8 +230,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.gage" />
-        <item index="1" class="java.lang.String" itemvalue="Python.station" />
+        <item index="0" class="java.lang.String" itemvalue="Python.station" />
+        <item index="1" class="java.lang.String" itemvalue="Python.gage" />
       </list>
     </recent_temporary>
   </component>
@@ -356,14 +352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/station.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frfObjectBase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -378,6 +366,16 @@
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#180#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/station.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#190#205#0" expanded="true" />
           </folding>
         </state>
       </provider>
