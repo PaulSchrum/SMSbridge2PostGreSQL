@@ -1,5 +1,5 @@
 '''
-Station class represents a sensor platform station.
+Gage class represents a a gage or sensor.
 All data is expected to come from a json entity which was originally created
    via a MongoDB json dump from FRF's SMS database.
 '''
