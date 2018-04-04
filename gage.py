@@ -21,9 +21,7 @@ class Gage(FrfObjectBase):
         self.barCode =  aDict.get('barCode', None)
         self.manufacturer =  aDict.get('manufacturer', None)
         self.model =  aDict.get('model', None)
-
         self.firmwareVersion =  aDict.get('firmwareVersion', None)
-
         self.lat = float( aDict.get('lat','0.0'))
         self.lon = float( aDict.get('lon', '0,0'))
 
