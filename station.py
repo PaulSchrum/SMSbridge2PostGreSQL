@@ -24,6 +24,7 @@ class Station(FrfObjectBase):
         self.waterDepth = aDict.get('waterDepth', '0.0')
         self.createdAt = aDict.get('createdAt', None)
         self.createdBy = aDict.get('createdBy', None)
+        self._cleanUpNAs()
 
 def GetAllStationsDict(pathFN):
     returnDict = {}
