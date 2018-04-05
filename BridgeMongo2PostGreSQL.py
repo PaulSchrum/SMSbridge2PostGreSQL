@@ -12,7 +12,6 @@ from gage import Gage
 print 'imports complete'
 
 mxd = None
-mxdPath = r'D:\SourceModules\Python\SMSbridge2PostGreSQL\Data\arcmapStuff\Testbed.mxd'
 lyrStationsName = 'Stations'
 tblGages = 'tbl_gages'
 tblStatuses = 'tbl_statuses'
@@ -29,14 +28,32 @@ gagesRequiredFields = [('gageId', 'STRING', '31'),
                        ('createdAt', 'DATE', ''),
                        ('title', 'STRING', '31')]
 
-statusesRequiredFields = [('statusId', 'STRING', '31'),
-                          ('gageId', 'STRING', '31'),
-                          ('status', 'STRING', '31'),
-                          ('startTime', 'DATE', ''),
-                          ('endTime', 'DATE', ''),
-                          ('updatedAt', 'DATE', ''),
-                          ('updatedBy', 'STRING', '31')]
+def _deleteAllFields_development(layerObj, shouldRun=False):
+    '''
+    WARNING: Destructive Function. Use only for development
+    Removes fields from a given feature class or db file through
+    a layer object.
+    Removes everything but OID and @Shape.
+    :param layerObj: The layer to delete fields from
+    :return: None
+    '''
+    if shouldRun == False:
+        return
 
+    if layerObj is None:
+        return None
+    lst = []
+    try:
+        lst = arcpy.ListFields(layerObj)
+    except:
+        lst = arcpy.ListFields(layerObj.dataSource)
+    if len(lst) == 0:
+        return None
+    if len(lst) == 0:
+        return None
+
+    fieldList = [fld.name.upper() for fld in lst]
+    arcpy.DeleteField_management(layerObj, fieldList)
 
 
 def deleteAllRows(layerObj):
@@ -98,23 +115,35 @@ def initializeTables(mxd):
     except:
         pass
 
-    try:
-        fullPath = os.path.join(workingGdb, tblStatuses)
-        ensureTableLayerHasFields(fullPath, statusesRequiredFields)
-    except:
-        pass
-
     print 'tables initialized'
 
+def _getFirstOrDefault(aCollection):
+    '''
+    return the first item of a list or tuple.
+    :param aCollection: The list or tuple to use
+    :return: The first item in the list. If aCollection is
+        None, it returns None. If the aCollection is empty,
+        it returns None.
+    '''
+    if aCollection is None:
+        return None
+
+    # from https://stackoverflow.com/a/365934/1339950
+    return next(iter(aCollection), None)
 
 if __name__ == '__main__':
-    testDir = 'Data\arcmapStuff'
+    testDir = 'Data/arcmapStuff'
     cwd = os.getcwd()
     testFullPath = os.path.join(cwd, testDir)
-    mapFileName = os.path.join(testFullPath, 'stations.json')
+    mapFileName = os.path.join(testFullPath, 'testBed.mxd')
 
-    mxd = arcpy.mapping.MapDocument(mxdPath)
-    initializeTables(mxd)
+    mxd = arcpy.mapping.MapDocument(mapFileName)
+    stationsLayer = _getFirstOrDefault(
+        [L for L in arcpy.mapping.ListLayers(mxd)
+            if L.name == 'Station'])
+    temp = arcpy.ListFields(stationsLayer.dataSource)
+    _deleteAllFields_development(stationsLayer, shouldRun=True)
+    # initializeTables(mxd)
 
     # print arcpy.GetCount_management(lyrStations), 'before deleteAllRows'
     # deleteAllRows(lyrStations)
