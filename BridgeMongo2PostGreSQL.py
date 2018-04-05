@@ -7,6 +7,8 @@ with data from them.
 print 'started'
 import arcpy
 import os
+from station import Station
+from gage import Gage
 print 'imports complete'
 
 mxd = None
@@ -106,6 +108,11 @@ def initializeTables(mxd):
 
 
 if __name__ == '__main__':
+    testDir = 'Data\arcmapStuff'
+    cwd = os.getcwd()
+    testFullPath = os.path.join(cwd, testDir)
+    mapFileName = os.path.join(testFullPath, 'stations.json')
+
     mxd = arcpy.mapping.MapDocument(mxdPath)
     initializeTables(mxd)
 
