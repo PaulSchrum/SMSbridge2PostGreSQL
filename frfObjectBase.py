@@ -1,4 +1,5 @@
 
+requiredFields = []
 
 class FrfObjectBase:
     def _cleanUpNAs(self):
