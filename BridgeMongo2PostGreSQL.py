@@ -20,7 +20,7 @@ tblGages = 'tbl_gages'
 tblStatuses = 'tbl_statuses'
 
 
-def _deleteAllFields_development(layerObj, shouldRun=False):
+def deleteAllFields(layerObj, shouldRun=False):
     '''
     WARNING: Destructive Function. Use only for development
     Removes fields from a given feature class or db file through
@@ -158,7 +158,7 @@ def getAllIds(layerObj):
     del cursor
     return idSet
 
-def appendOrUpdateStations(stationsLayer, stationsDict):
+def updateStations(stationsLayer, stationsDict):
     existingStationIds = getAllIds(stationsLayer)
 
     incomingStationIDset = set(stationsDict.keys())
@@ -209,7 +209,7 @@ def appendOrUpdateStations(stationsLayer, stationsDict):
 
 def readAllJsonDumps(stationsLayer, stationsName): #, gagesName):
     stationsDict = readStationsJson(stationsName)
-    appendOrUpdateStations(stationsLayer, stationsDict)
+    updateStations(stationsLayer, stationsDict)
 
     i = 0
 
@@ -226,7 +226,7 @@ if __name__ == '__main__':
     stationsLayer = _getFirstOrDefault(
         [L for L in arcpy.mapping.ListLayers(mxd)
             if L.name == 'Station'])
-    # _deleteAllFields_development(stationsLayer, shouldRun=True)
+    # deleteAllFields(stationsLayer, shouldRun=True)
     stationFields = arcpy.ListFields(stationsLayer.dataSource)
     if len(stationFields) <= 2:
         ensureTableLayerHasFields(stationsLayer, staRequiredFields)
