@@ -106,7 +106,7 @@ def initializeTables(mxd):
 
     try:
         fullPath = os.path.join(workingGdb, tblGages)
-        ensureTableLayerHasFields(fullPath, gagesRequiredFields)
+        ensureTableLayerHasFields(fullPath, gageRequiredFields)
     except:
         pass
 
