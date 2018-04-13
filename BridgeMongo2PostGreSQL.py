@@ -55,7 +55,7 @@ def deleteAllRows(layerObj):
     '''
     Deletes all rows of a table or feature class.
     WARNING: This function deletes ALL ROWS of a table or feature class.
-    If you calls it, there is no oopsie.
+    If you call it, there is no oopsie.
     :param layerObj: The Layer to have all rows deleted from.
     :return: None
     '''
