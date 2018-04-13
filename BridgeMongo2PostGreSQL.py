@@ -159,21 +159,29 @@ def getAllIds(layerObj):
     return idSet
 
 def updateStations(stationsLayer, stationsDict):
-    pass
+    deleteAllRows(stationsLayer)
+
+    fieldList = staGetStationsFieldList()
+
+    # write the new stations to the Layer
+    with arcpy.da.InsertCursor(stationsLayer, fieldList) as cursor:
+        for stationID, aStation in stationsDict.iteritems():
+            rowList = aStation.createOrUpdateRow()
+            cursor.insertRow(rowList)
+    del cursor
 
 def readAllJsonDumps(stationsLayer, stationsName): #, gagesName):
     stationsDict = readStationsJson(stationsName)
     updateStations(stationsLayer, stationsDict)
-
-    i = 0
 
 if __name__ == '__main__':
     testDir = 'Data/arcmapStuff'
     cwd = os.getcwd()
     testFullPath = os.path.join(cwd, testDir)
     mapFileName = os.path.join(testFullPath, 'testBed.mxd')
-    frfDir = os.path.join(cwd, 'Data/FRFdata')
-    stationsFname = os.path.join(frfDir, 'stations3.json')
+    # frfDir = os.path.join(cwd, 'Data/FRFdata')
+    frfDir = os.path.join(cwd, 'Data/SMS_json_v20180412')
+    stationsFname = os.path.join(frfDir, 'stations.json')
     stationsJsonDump = os.path.join(testFullPath, stationsFname)
 
     mxd = arcpy.mapping.MapDocument(mapFileName)
