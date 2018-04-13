@@ -7,10 +7,19 @@ All data is expected to come from a json entity which was originally created
 import os, json
 from frfObjectBase import FrfObjectBase
 
+requiredFields = [('gageId', 'STRING', '31'),
+                       ('gageModelName', 'STRING', '31'),
+                       ('stationName', 'STRING', '31'),
+                       ('assigned', 'STRING', '31'),
+                       ('comments', 'STRING', '63'),
+                       ('createdAt', 'DATE', ''),
+                       ('title', 'STRING', '31')]
+
+
 class Gage(FrfObjectBase):
     def __init__(self, rowStr):
         aDict = json.loads(rowStr)
-        self.id = aDict['_id']
+        self._id = aDict['_id']
         self.projectId = aDict.get('projectId', None)
         self.station =  aDict.get('station', None)
         self.stationId =  aDict.get('stationId', None)
