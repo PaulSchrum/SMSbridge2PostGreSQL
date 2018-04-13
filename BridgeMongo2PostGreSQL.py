@@ -159,53 +159,7 @@ def getAllIds(layerObj):
     return idSet
 
 def updateStations(stationsLayer, stationsDict):
-    existingStationIds = getAllIds(stationsLayer)
-
-    incomingStationIDset = set(stationsDict.keys())
-    newStationsIDset = incomingStationIDset - existingStationIds
-    updateableStations = existingStationIds.intersection(incomingStationIDset)
-
-    fieldList = set(staGetStationsFieldList())
-    # remove immutable fields - Update works only with
-    #    mutable fields
-    fListMutables = set(fieldList)
-    fListMutables = fListMutables.difference(set(['SHAPE@XY', 'lat', 'lon']))
-    fListMutables = list(fListMutables)
-
-    whereStatement = '_id IN ('
-    # update the existing stations of the Layer
-    if len(updateableStations) > 0:
-
-        # Only get rows where station id is in updateableStations
-        for idx, aStaId in enumerate(updateableStations):
-            if idx > 0:
-                whereStatement = whereStatement + ","
-            whereStatement = whereStatement + "'" + aStaId + "'"
-        whereStatement = whereStatement + ')'
-
-        with arcpy.da.UpdateCursor(stationsLayer, fListMutables, whereStatement) as cursor:
-            idIndex = fListMutables.index('_id')
-            for aRow in cursor:
-                staId = aRow[idIndex]
-                newStationData = stationsDict[staId]
-                for fName in fListMutables:
-                    rowIdx = fListMutables.index(fName)
-                    newValue = newStationData.__dict__[fName]
-                    aRow[rowIdx] = newValue
-                cursor.updateRow(aRow)
-                i = 0
-        del cursor
-
-    # write the new stations to the Layer
-    with arcpy.da.InsertCursor(stationsLayer, fieldList) as cursor:
-        while len(newStationsIDset) > 0:
-            stationID = newStationsIDset.pop()
-            aStation = stationsDict[stationID]
-            rowList = aStation.createOrUpdateRow()
-            cursor.insertRow(rowList)
-    del cursor
-
-    i = 0
+    pass
 
 def readAllJsonDumps(stationsLayer, stationsName): #, gagesName):
     stationsDict = readStationsJson(stationsName)
