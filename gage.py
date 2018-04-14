@@ -7,42 +7,72 @@ All data is expected to come from a json entity which was originally created
 import os, json
 from frfObjectBase import FrfObjectBase
 
-requiredFields = [('gageId', 'STRING', '31'),
-                       ('gageModelName', 'STRING', '31'),
-                       ('stationName', 'STRING', '31'),
-                       ('assigned', 'STRING', '31'),
-                       ('comments', 'STRING', '63'),
-                       ('createdAt', 'DATE', ''),
-                       ('title', 'STRING', '31')]
+requiredFields = [('_id', 'STRING', '31'),
+                  ('stationId', 'STRING', '31'),
+                  ('gageNumber', 'STRING', '31'),
+                  ('gageName', 'STRING', '31'),
+                  ('gageType', 'STRING', '63'),
+                  ('owner', 'STRING', '63'),
+                  ('serialNumber', 'STRING', '63'),
+                  ('barCode', 'STRING', '31'),
+                  ('manufacturer', 'STRING', '31'),
+                  ('model', 'STRING', '31'),
+                  ('firmwareVersion', 'STRING', '31'),
+                  ('depth', 'STRING', '31'),
+                  ('description', 'STRING', '255'),
+                  ('createdAt', 'STRING', '31'),
+                  ('createdBy', 'STRING', '31'),
+                  ]
 
 
 class Gage(FrfObjectBase):
     def __init__(self, rowStr):
         aDict = json.loads(rowStr)
         self._id = aDict['_id']
-        self.projectId = aDict.get('projectId', None)
-        self.station =  aDict.get('station', None)
         self.stationId =  aDict.get('stationId', None)
         self.gageNumber =  aDict.get('gageNumber', None)
         self.gageName =  aDict.get('gageName', None)
         self.gageType =  aDict.get('gageType', None)
+        self.owner =  aDict.get('owner', None)
         self.serialNumber =  aDict.get('serialNumber', None)
-        self.barCode =  aDict.get('barCode', None)
+        self.barCode =  aDict.get('', None)
         self.manufacturer =  aDict.get('manufacturer', None)
         self.model =  aDict.get('model', None)
         self.firmwareVersion =  aDict.get('firmwareVersion', None)
-        self.lat = float( aDict.get('lat','0.0'))
-        self.lon = float( aDict.get('lon', '0,0'))
+        self.depth =  aDict.get('depth', None)
+        if self.depth is not None and isinstance(self.depth, dict): # it is another json object, so unpack
+            try:
+                tempD = json.loads(self.depth)
+                self.depth = tempD.values()[0]
+            except Exception as ex:
+                self.depth = None
 
-        try:
-            self.depth =  float(aDict['depth']['nominalDepth'])
-        except:
-            self.depth = 0.0
-
-        self.description = aDict.get('description', None)
+        self.description =  aDict.get('description', None)
         self.createdAt =  aDict.get('createdAt', None)
         self.createdBy =  aDict.get('createdBy', None)
+
         self._cleanUpNAs()
+        if self.createdAt is not None:
+            self.createdAt = self.createdAt['$date']
+
+    @staticmethod
+    def getRequiredFieldsTuples():
+        return requiredFields
+
+    @staticmethod
+    def getRequiredFieldNames():
+        return [x[0] for x in requiredFields]
+
+    def createOrUpdateRow(self):
+        '''
+        :return: List containing all values of this gage to be
+                used in creating a new gage row.
+        '''
+        retList = []
+        for fieldName in Gage.getRequiredFieldNames():
+            aValue = self.__dict__[fieldName]
+            retList.append(aValue)
+        return retList
 
 
 def GetAllGagesDict(pathFN):
@@ -55,6 +85,15 @@ def GetAllGagesDict(pathFN):
         returnDict[aStation.id] = aStation
 
     return returnDict
+
+# def getGagesFieldList():
+#     '''
+#     Retrieves the list of fields to be updated for a Gage Row.
+#     Using this every time ensures that the order of fields is always the same.
+#     '''
+#     retList = [val[0] for val in requiredFields]
+#     return retList
+
 
 if __name__ == '__main__':
     testDir = 'Data/FRFdata'

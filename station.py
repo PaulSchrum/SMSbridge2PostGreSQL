@@ -14,7 +14,7 @@ requiredFields = [('_id', 'STRING', '31'),
                   ('stationNumber', 'STRING', '31'),
                   ('stationLoc', 'STRING', '63'),
                   ('owner', 'STRING', '31'),
-                  ('description', 'STRING', '127'),
+                  ('description', 'STRING', '255'),
                   ('status', 'STRING', '31'),
                   ('lat', 'STRING', '31'),
                   ('lon', 'STRING', '31'),
@@ -23,18 +23,18 @@ requiredFields = [('_id', 'STRING', '31'),
                   ('createdBy', 'STRING', '31')
                   ]
 
-def getStationsFieldList():
-    '''
-    Retrieves the list of fields to be updated for a Station Row.
-    Using this every time ensures that the order of fields is always the same.
-    '''
-    retList = ['SHAPE@XY']
-    retList.extend([val[0] for val in requiredFields])
-    return retList
+# def getStationsFieldList():
+#     '''
+#     Retrieves the list of fields to be updated for a Station Row.
+#     Using this every time ensures that the order of fields is always the same.
+#     '''
+#     retList = ['SHAPE@XY']
+#     retList.extend([val[0] for val in requiredFields])
+#     return retList
 
-fieldNameNumberDict = {}
-for index, value in enumerate(getStationsFieldList()):
-    fieldNameNumberDict[value] = index
+# fieldNameNumberDict = {}
+# for index, value in enumerate(getStationsFieldList()):
+#     fieldNameNumberDict[value] = index
 
 class Station(FrfObjectBase):
     def __init__(self, rowStr):
@@ -57,12 +57,26 @@ class Station(FrfObjectBase):
         if self.createdAt is not None:
             self.createdAt = self.createdAt['$date']
 
+    @staticmethod
+    def getRequiredFieldsTuples():
+        return requiredFields
+
+    @staticmethod
+    def getRequiredFieldNames():
+        '''
+        Retrieves the list of fields to be updated for a Station Row.
+        Using this every time ensures that the order of fields is always the same.
+        '''
+        retList = ['SHAPE@XY']
+        retList.extend([val[0] for val in requiredFields])
+        return retList
+
     def createOrUpdateRow(self):
         '''
         :return: List containing all values of this station
         '''
         retList = [(self.lon, self.lat)] # corresponds to 'SHAPE@XY'
-        for fieldName in getStationsFieldList()[1:]:
+        for fieldName in Station.getRequiredFieldNames()[1:]:
             aValue = self.__dict__[fieldName]
             retList.append(aValue)
         return retList
