@@ -208,7 +208,7 @@ def updateGages(gagesTable, gagesDict):
     del cursor
 
 def bridgeAllJsonDumpsToArcTables(stationsLayer, stationsJsonName,
-                     gagesTable, gagesJsonName): #, gagesName):
+                     gagesTable, gagesJsonName):
     '''
     This is the main function of the module. Call this to do what you want to do.
     Given the parameters, bridge the data from the MongoDb Json dump file (which is the
@@ -236,6 +236,17 @@ def getTableByName(theMxd, tableName):
     return _getFirstOrDefault(
         [tbl for tbl in tbls if tbl.name == tableName])
 
+def getLayerByName(theMxd, layerName):
+    '''
+    Given a map document object and the name of a table view in that map,
+    return the tableView object.
+    :param theMxd: The Map Document Object where to find the table view.
+    :param layerName: The name (string) of the Table View.
+    :return:
+    '''
+    lyrs = arcpy.mapping.ListLayers(theMxd)
+    return _getFirstOrDefault(
+        [lyr for lyr in lyrs if lyr.name == layerName])
 
 if __name__ == '__main__':
 
@@ -248,20 +259,21 @@ if __name__ == '__main__':
     # frfDir = os.path.join(cwd, 'Data/FRFdata')
     frfDir = os.path.join(cwd, 'Data/SMS_json_v20180412')
     stationsFname = os.path.join(frfDir, 'stations.json')
+
     stationsJsonDump = os.path.join(testFullPath, stationsFname)
     gagesFname = os.path.join(frfDir, 'gages.json')
     gagesJsonDump = os.path.join(testFullPath, gagesFname)
 
+    # mxd = arcpy.mapping.MapDocument(mapFileName)
+    # stationsLayer = _getFirstOrDefault(
+    #     [L for L in arcpy.mapping.ListLayers(mxd)
+    #         if L.name == 'Station'])
+    #
     mxd = arcpy.mapping.MapDocument(mapFileName)
-    stationsLayer = _getFirstOrDefault(
-        [L for L in arcpy.mapping.ListLayers(mxd)
-            if L.name == 'Station'])
 
+    stationsLayer = getLayerByName(mxd, 'Station')
     gagesTable = getTableByName(mxd, 'tbl_gages')
 
-    # deleteAllFields(stationsLayer, shouldRun=True)
-    # ensureTableLayerHasFields(stationsLayer, staRequiredFields)
-    # deleteAllRows(stationsLayer)
     bridgeAllJsonDumpsToArcTables(stationsLayer, stationsJsonDump,
                      gagesTable, gagesJsonDump)
 

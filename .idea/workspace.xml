@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd9d9d83-c93f-4738-a047-690b3fb9e0eb" name="Default" comment="">
+    <list default="true" id="fc1fa539-88d2-4d6c-bb03-5cbc96d01b83" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a0000001a.freelist" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000004.freelist" afterPath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000004.freelist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000004.gdbtable" afterPath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000004.gdbtable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000004.gdbtablx" afterPath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000004.gdbtablx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000019.freelist" afterPath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000019.freelist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000019.gdbtable" afterPath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000019.gdbtable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000019.gdbtablx" afterPath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a00000019.gdbtablx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a0000001a.gdbtable" afterPath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a0000001a.gdbtable" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a0000001a.gdbtablx" afterPath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a0000001a.gdbtablx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a0000001a.spx" afterPath="$PROJECT_DIR$/Data/arcmapStuff/testing.gdb/a0000001a.spx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BridgeMongo2PostGreSQL.py" afterPath="$PROJECT_DIR$/BridgeMongo2PostGreSQL.py" />
     </list>
@@ -12,28 +22,93 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="BridgeMongo2PostGreSQL.py" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/BridgeMongo2PostGreSQL.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="325">
+                    <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                    <folding>
+                      <element signature="e#313#325#0" expanded="true" />
+                      <marker date="1523920061628" expanded="true" signature="8709:8786" ph="..." />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="station.py" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/station.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="2075">
+                    <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+                    <folding>
+                      <element signature="e#190#205#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="gage.py" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/gage.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="450">
+                    <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+                    <folding>
+                      <element signature="e#180#195#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="gages.json" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/Data/FRFdata/gages.json">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="150">
+                    <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="stations.json" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Data/SMS_json_v20180412/stations.json">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="50">
+                    <caret line="2" column="126" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="126" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="BridgeMongo2PostGreSQL.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BridgeMongo2PostGreSQL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="116" column="25" lean-forward="true" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
+            <state relative-caret-position="562">
+              <caret line="283" column="16" lean-forward="true" selection-start-line="283" selection-start-column="16" selection-end-line="283" selection-end-column="16" />
               <folding>
-                <element signature="e#242#254#0" expanded="true" />
+                <element signature="e#313#325#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frfSensorEntry.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Experimental_Developmental/frfSensorEntry.py">
+      <file leaf-file-name="_base.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Program Files (x86)/ArcGIS/Desktop10.5/arcpy/arcpy/arcobjects/_base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-              <folding>
-                <element signature="e#1#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="311">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,8 +116,8 @@
       <file leaf-file-name="station.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/station.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="45" selection-end-column="62" />
+            <state relative-caret-position="60">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#190#205#0" expanded="true" />
               </folding>
@@ -53,8 +128,8 @@
       <file leaf-file-name="gage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="525">
+              <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
               <folding>
                 <element signature="e#180#195#0" expanded="true" />
               </folding>
@@ -65,38 +140,8 @@
       <file leaf-file-name="frfObjectBase.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frfObjectBase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24625">
-              <caret line="1022" column="0" lean-forward="false" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gages.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/FRFdata/gages.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stations.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/FRFdata/stations.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="500">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,6 +162,32 @@
       <find>aDict</find>
       <find>ct['</find>
       <find>']</find>
+      <find>statusesRequiredFields</find>
+      <find>mxdPath</find>
+      <find>kpmon</find>
+      <find>initializeTables</find>
+      <find>allrow</find>
+      <find>update</find>
+      <find>Station</find>
+      <find>readStationsJson</find>
+      <find>staRequiredFields</find>
+      <find>delete</find>
+      <find>_deleteAllFields_development</find>
+      <find>fieldList = set(staGet</find>
+      <find>appendOrUpdateStations</find>
+      <find>_delete</find>
+      <find>readAllJsonDumps</find>
+      <find>updateStations</find>
+      <find>updateGages</find>
+      <find>createOrUpdateRow</find>
+      <find>staGetStationsFieldList</find>
+      <find>ensureTableLayerHasFields</find>
+      <find>[2]</find>
+      <find>ensure</find>
+      <find>fieldNameNumberDict</find>
+      <find>:</find>
+      <find>&quot;depth&quot; :</find>
+      <find>except</find>
     </findStrings>
     <replaceStrings>
       <replace>aDict</replace>
@@ -132,18 +203,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="C:/gispy/scratch/bufferallv1.py" />
+        <option value="D:/NCSU/201801 Spring 2018/GIS 540 TA/HW/HW7_stuff/HW7/HomeworkUtility.py" />
+        <option value="$PROJECT_DIR$/Data/FRFdata/stations1.json" />
+        <option value="$PROJECT_DIR$/Data/FRFdata/stations2.json" />
+        <option value="$PROJECT_DIR$/Data/FRFdata/stations3.json" />
+        <option value="D:/NCSU/201801 Spring 2018/GIS 590 Capstone Project/CodeBackups/20180412 BridgeMongo2PostGreSQL.py" />
+        <option value="$PROJECT_DIR$/Data/SMS_json_v20180412/stations.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/frfObjectBase.py" />
         <option value="$PROJECT_DIR$/station.py" />
         <option value="$PROJECT_DIR$/gage.py" />
-        <option value="$PROJECT_DIR$/frfObjectBase.py" />
         <option value="$PROJECT_DIR$/BridgeMongo2PostGreSQL.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="326" />
-    <option name="y" value="-4" />
-    <option name="width" value="1556" />
-    <option name="height" value="1024" />
+    <option name="x" value="1989" />
+    <option name="y" value="-561" />
+    <option name="width" value="1480" />
+    <option name="height" value="1413" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -160,8 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,14 +245,18 @@
               <item name="SMSbridge2PostGreSQL" type="b2602c69:ProjectViewProjectNode" />
               <item name="SMSbridge2PostGreSQL" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SMSbridge2PostGreSQL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SMSbridge2PostGreSQL" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -242,16 +322,35 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="3">
+    <configuration name="typeDict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\ArcGIS10.5\python.exe" />
+      <option name="WORKING_DIRECTORY" value="D:/NCSU/GradingGIS540" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SMSbridge2PostGreSQL" />
+      <option name="SCRIPT_NAME" value="D:/NCSU/GradingGIS540/typeDict.py" />
+      <option name="PARAMETERS" value="C:/gispy/data/ch18/smallDir" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.station" />
       <item index="1" class="java.lang.String" itemvalue="Python.gage" />
       <item index="2" class="java.lang.String" itemvalue="Python.BridgeMongo2PostGreSQL" />
+      <item index="3" class="java.lang.String" itemvalue="Python.typeDict" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Python.BridgeMongo2PostGreSQL" />
         <item index="1" class="java.lang.String" itemvalue="Python.station" />
-        <item index="2" class="java.lang.String" itemvalue="Python.gage" />
+        <item index="2" class="java.lang.String" itemvalue="Python.typeDict" />
+        <item index="3" class="java.lang.String" itemvalue="Python.gage" />
       </list>
     </recent_temporary>
   </component>
@@ -260,35 +359,35 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cd9d9d83-c93f-4738-a047-690b3fb9e0eb" name="Default" comment="" />
-      <created>1522763397604</created>
+      <changelist id="fc1fa539-88d2-4d6c-bb03-5cbc96d01b83" name="Default" comment="" />
+      <created>1523835238184</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1522763397604</updated>
+      <updated>1523835238184</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="326" y="-4" width="1556" height="1024" extended-state="0" />
+    <frame x="1989" y="-561" width="1480" height="1413" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16579974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17236662" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23351435" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23529412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31109387" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33222222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -300,26 +399,193 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gage.py</url>
-          <line>56</line>
+          <line>104</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/BridgeMongo2PostGreSQL.py</url>
-          <line>115</line>
-          <option name="timeStamp" value="14" />
+          <line>91</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="102" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self.__dict__" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#180#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frfObjectBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/FRFdata/gages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/FRFdata/stations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/station.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1375">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#190#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BridgeMongo2PostGreSQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#313#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experimental_Developmental/frfSensorEntry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#180#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frfObjectBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/FRFdata/gages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/FRFdata/stations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/station.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#190#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BridgeMongo2PostGreSQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#313#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experimental_Developmental/frfSensorEntry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#180#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frfObjectBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/FRFdata/gages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/FRFdata/stations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/station.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1375">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#190#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BridgeMongo2PostGreSQL.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#242#254#0" expanded="true" />
+            <element signature="e#313#325#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -328,9 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding>
-            <element signature="e#1#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -358,7 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24625">
           <caret line="1022" column="0" lean-forward="false" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -374,7 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -391,87 +652,145 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#242#254#0" expanded="true" />
+            <element signature="e#313#325#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://C:/gispy/scratch/bufferallv1.py" />
-    <entry file="file://$PROJECT_DIR$/Experimental_Developmental/frfSensorEntry.py">
+    <entry file="file://C:/Program Files (x86)/ArcGIS/Desktop10.5/arcpy/arcpy/arcobjects/mixins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding>
-            <element signature="e#1#12#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="653" column="30" lean-forward="true" selection-start-line="653" selection-start-column="30" selection-end-line="653" selection-end-column="30" />
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Program Files (x86)/ArcGIS/Desktop10.5/arcpy/arcpy/geoprocessing/_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="352" column="16" lean-forward="true" selection-start-line="352" selection-start-column="16" selection-end-line="352" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/NCSU/GradingGIS540/typeDict.py" />
+    <entry file="file://D:/NCSU/GradingGIS540/typeDict_solution.py" />
     <entry file="file://$PROJECT_DIR$/Data/FRFdata/stations.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Experimental_Developmental/DataExplorations.py">
+    <entry file="file://D:/NCSU/201801 Spring 2018/GIS 540 TA/HW/HW7_stuff/HW7/HomeworkUtility.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/FRFdata/gages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="451">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24625">
+        <state relative-caret-position="206">
           <caret line="1022" column="0" lean-forward="false" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/NCSU/201801 Spring 2018/GIS 590 Capstone Project/CodeBackups/20180412 BridgeMongo2PostGreSQL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="243" column="0" lean-forward="true" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/FRFdata/stations1.json" />
+    <entry file="file://$PROJECT_DIR$/Data/FRFdata/stations2.json" />
+    <entry file="file://$PROJECT_DIR$/Data/FRFdata/stations3.json" />
+    <entry file="file://$PROJECT_DIR$/Experimental_Developmental/DataExplorations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="1112" column="0" lean-forward="true" selection-start-line="1112" selection-start-column="0" selection-end-line="1112" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experimental_Developmental/frfSensorEntry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/ArcGIS/Desktop10.5/arcpy/arcpy/management.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="3442" column="0" lean-forward="false" selection-start-line="3442" selection-start-column="0" selection-end-line="3442" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frfObjectBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        <state relative-caret-position="525">
+          <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
           <folding>
             <element signature="e#180#195#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frfObjectBase.py">
+    <entry file="file://$PROJECT_DIR$/Data/FRFdata/gages.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="150">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/SMS_json_v20180412/stations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="126" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="126" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/station.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="45" selection-end-column="62" />
+        <state relative-caret-position="60">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#190#205#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Program Files (x86)/ArcGIS/Desktop10.5/arcpy/arcpy/arcobjects/_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BridgeMongo2PostGreSQL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="116" column="25" lean-forward="true" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
+        <state relative-caret-position="562">
+          <caret line="283" column="16" lean-forward="true" selection-start-line="283" selection-start-column="16" selection-end-line="283" selection-end-column="16" />
           <folding>
-            <element signature="e#242#254#0" expanded="true" />
+            <element signature="e#313#325#0" expanded="true" />
           </folding>
         </state>
       </provider>
