@@ -4,7 +4,17 @@ the .json file was generated from MongoDB via a data dump.
 Parses the JSON objects and populates a feature class and two tables
 with data from them.
 
-The feature store may be of either kind, gdb or PostGres database.
+The feature store may be of either kind, gdb or PostGres database. They are accessed
+through map layers via arcpy, so adapting API calls to what kind of feature store
+is taken care of by arcpy.
+
+From the command line ...
+To run prepared test scenarios (under if __name__ == '__main__), call this module
+with alone with no parameters.
+
+To run the module on the dataset of your choosing, call the module with the full
+path to the map document you want to operate on, such as
+   python BridgeMongo2PostGreSQL "C:\scratch\My Map.mxd"
 '''
 print 'started'
 import arcpy
