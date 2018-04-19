@@ -16,12 +16,18 @@ To run the module on the dataset of your choosing, call the module with the full
 path to the map document you want to operate on, such as
    python BridgeMongo2PostGreSQL "C:\scratch\My Map.mxd"
 '''
-print 'started'
+
+import sys
+def _maybePrint(aString):
+    if __name__ == "__main__" and len(sys.argv) == 1:
+        print aString
+
+_maybePrint('imports started')
 import arcpy
-import os, json, sys
+import os, json
 from station import Station
 from gage import Gage
-print 'imports complete'
+_maybePrint('imports complete')
 
 mxd = None
 lyrStationsName = 'Stations'
