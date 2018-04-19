@@ -18,7 +18,7 @@ path to the map document you want to operate on, such as
 '''
 print 'started'
 import arcpy
-import os, json
+import os, json, sys
 from station import Station
 from gage import Gage
 print 'imports complete'
@@ -107,8 +107,9 @@ def initializeTables(mxd):
     workingGdb = os.path.dirname(lyrStations.dataSource)
 
     try:
+        fieldNamesRequired = Station.getRequiredFieldsTuples()
         ensureTableLayerHasFields(lyrStations,
-                                  Station.getRequiredFieldsTuples())
+                                  fieldNamesRequired)
     except:
         pass
 
@@ -255,10 +256,45 @@ def getLayerByName(theMxd, layerName):
     :return:
     '''
     lyrs = arcpy.mapping.ListLayers(theMxd)
+    # lNames = [L.name for L in lyrs]
+    # seekingLayer = [lyr for lyr in lyrs if lyr.name == layerName]
     return _getFirstOrDefault(
         [lyr for lyr in lyrs if lyr.name == layerName])
 
+def _processMxd(fileName):
+    testDir = 'Data/arcmapStuff'
+    cwd = os.path.dirname(sys.argv[0])
+    testFullPath = os.path.join(cwd, testDir)
+    mapFileName = sys.argv[1]
+
+    # swap the next two lines commented status to test different file sets.
+    # frfDir = os.path.join(cwd, 'Data/FRFdata')
+    frfDir = os.path.join(cwd, 'Data/SMS_json_v20180412')
+    stationsFname = os.path.join(frfDir, 'stations.json')
+
+    stationsJsonDump = os.path.join(testFullPath, stationsFname)
+    gagesFname = os.path.join(frfDir, 'gages.json')
+    gagesJsonDump = os.path.join(testFullPath, gagesFname)
+
+    # mxd = arcpy.mapping.MapDocument(mapFileName)
+    # stationsLayer = _getFirstOrDefault(
+    #     [L for L in arcpy.mapping.ListLayers(mxd)
+    #         if L.name == 'Station'])
+    #
+    mxd = arcpy.mapping.MapDocument(mapFileName)
+
+    stationsLayer = getLayerByName(mxd, 'Stations')
+    gagesTable = getTableByName(mxd, 'tbl_gages')
+
+    bridgeAllJsonDumpsToArcTables(stationsLayer, stationsJsonDump,
+                     gagesTable, gagesJsonDump)
+
+
 if __name__ == '__main__':
+
+    if len(sys.argv) > 1:
+        _processMxd(sys.argv[1])
+        exit(0)
 
     testDir = 'Data/arcmapStuff'
     cwd = os.getcwd()
@@ -291,6 +327,7 @@ if __name__ == '__main__':
     # deleteAllRows(stationsLayer)
     # print arcpy.GetCount_management(stationsLayer), 'after deleteAllRows'
 
+    del mxd
     print 'Done'
 
 
