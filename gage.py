@@ -5,9 +5,9 @@ All data is expected to come from a json entity which was originally created
 '''
 
 import os, json
-from frfObjectBase import FrfObjectBase
+from frfObjectBase import FrfObjectBase as B
 
-requiredFields = [('_id', 'STRING', '31'),
+requiredFields = [('mongo_id', 'STRING', '31'),
                   ('stationId', 'STRING', '31'),
                   ('gageNumber', 'STRING', '31'),
                   ('gageName', 'STRING', '31'),
@@ -25,10 +25,10 @@ requiredFields = [('_id', 'STRING', '31'),
                   ]
 
 
-class Gage(FrfObjectBase):
+class Gage(B):
     def __init__(self, rowStr):
         aDict = json.loads(rowStr)
-        self._id = aDict['_id']
+        self.mongo_id = aDict[B._map('mongo_id')]
         self.stationId =  aDict.get('stationId', None)
         self.gageNumber =  aDict.get('gageNumber', None)
         self.gageName =  aDict.get('gageName', None)

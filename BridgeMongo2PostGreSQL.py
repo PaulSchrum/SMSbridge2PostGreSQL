@@ -158,8 +158,8 @@ def readStationsJson(stationsFileName):
             allLines = inFile.readlines()
             for aLine in allLines:
                 aStation = Station(aLine)
-                stationsDict[aStation._id] = Station(aLine)
-    except:
+                stationsDict[aStation.mongo_id] = Station(aLine)
+    except Exception as ex: # this exception handling should be improved some time.
         return {}
 
     return stationsDict
@@ -172,8 +172,8 @@ def readGagesJson(gagesFileName):
             allLines = inFile.readlines()
             for aLine in allLines:
                 aGage = Gage(aLine)
-                gagesDict[aGage._id] = aGage
-    except:
+                gagesDict[aGage.mongo_id] = aGage
+    except: # this exception handling should be improved some time.
         return {}
 
     return gagesDict

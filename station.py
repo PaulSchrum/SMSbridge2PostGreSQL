@@ -5,9 +5,9 @@ All data is expected to come from a json entity which was originally created
 '''
 
 import os, json
-from frfObjectBase import FrfObjectBase
+from frfObjectBase import FrfObjectBase as B
 
-requiredFields = [('_id', 'STRING', '31'),
+requiredFields = [('mongo_id', 'STRING', '31'),
                   ('project', 'STRING', '31'),
                   ('projectId', 'STRING', '31'),
                   ('stationName', 'STRING', '31'),
@@ -36,10 +36,10 @@ requiredFields = [('_id', 'STRING', '31'),
 # for index, value in enumerate(getStationsFieldList()):
 #     fieldNameNumberDict[value] = index
 
-class Station(FrfObjectBase):
+class Station(B):
     def __init__(self, rowStr):
         aDict = json.loads(rowStr)
-        self._id = aDict['_id']
+        self.mongo_id = aDict[B._map('mongo_id')]
         self.project = aDict.get('project', None)
         self.projectId = aDict.get('projectId', None)
         self.stationName = aDict.get('stationName', None)
@@ -89,13 +89,17 @@ def GetAllStationsDict(pathFN):
 
     for aRow in allLines:
         aStation = Station(aRow)
-        returnDict[aStation._id] = aStation
+        returnDict[aStation.mongo_id] = aStation
 
     return returnDict
 
 
 
 if __name__ == '__main__':
+    assert B._map('_id') == 'mongo_id'
+    assert B._map('mongo_id') == '_id'
+    assert B._map('station') == 'station'
+
     testDir = 'Data/FRFdata'
     cwd = os.getcwd()
     testFullPath = os.path.join(cwd, testDir)
