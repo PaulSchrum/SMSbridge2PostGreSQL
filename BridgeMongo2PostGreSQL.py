@@ -207,21 +207,24 @@ def updateStations(stationsLayer, stationsDict):
             cursor.insertRow(rowList)
     del cursor
 
-def updateGages(gagesTable, gagesDict):
-    if gagesTable is None or len(gagesDict) == 0:
+def updateGages(gagesLayer, gagesDict):
+    if gagesLayer is None or len(gagesDict) == 0:
         return
 
     fieldList = Gage.getRequiredFieldNames()
-    ensureAllColumns(gagesTable, 'gages')
-    deleteAllRows(gagesTable)
+    ensureAllColumns(gagesLayer, 'gages')
+    deleteAllRows(gagesLayer)
 
     # write the new stations to the Layer
-    with arcpy.da.InsertCursor(gagesTable, fieldList) as cursor:
+    with arcpy.da.InsertCursor(gagesLayer, fieldList) as cursor:
         for gageID, aGage in gagesDict.iteritems():
             try:
-                cursor.insertRow(aGage.createOrUpdateRow())
+                rowList = aGage.createOrUpdateRow()
+                cursor.insertRow(rowList)
             except Exception as ex:
-                i = 0
+                print "Error processing gageID: {0}: {1}" \
+                    .format(gageID, ex.message)
+
     del cursor
 
 def bridgeAllJsonDumpsToArcTables(stationsLayer, stationsJsonName,
@@ -267,7 +270,8 @@ def getLayerByName(theMxd, layerName):
     return _getFirstOrDefault(
         [lyr for lyr in lyrs if lyr.name == layerName])
 
-def _processMxd(fileName):
+def _processMxd(args):
+    fileName = args[1]
     testDir = 'Data/arcmapStuff'
     cwd = os.path.dirname(sys.argv[0])
     testFullPath = os.path.join(cwd, testDir)
@@ -299,7 +303,7 @@ def _processMxd(fileName):
 if __name__ == '__main__':
 
     if len(sys.argv) > 1:
-        _processMxd(sys.argv[1])
+        _processMxd(sys.argv)
         exit(0)
 
     testDir = 'Data/arcmapStuff'
@@ -316,19 +320,15 @@ if __name__ == '__main__':
     gagesFname = os.path.join(frfDir, 'gages.json')
     gagesJsonDump = os.path.join(testFullPath, gagesFname)
 
-    # mxd = arcpy.mapping.MapDocument(mapFileName)
-    # stationsLayer = _getFirstOrDefault(
-    #     [L for L in arcpy.mapping.ListLayers(mxd)
-    #         if L.name == 'Station'])
-    #
     mxd = arcpy.mapping.MapDocument(mapFileName)
 
     stationsLayer = getLayerByName(mxd, 'Station')
-    gagesTable = getTableByName(mxd, 'tbl_gages')
+    gagesLayer = getLayerByName(mxd, 'Gages')
 
     bridgeAllJsonDumpsToArcTables(stationsLayer, stationsJsonDump,
-                     gagesTable, gagesJsonDump)
+                     gagesLayer, gagesJsonDump)
 
+    # test deleteAllRows functionality
     # print arcpy.GetCount_management(stationsLayer), 'before deleteAllRows'
     # deleteAllRows(stationsLayer)
     # print arcpy.GetCount_management(stationsLayer), 'after deleteAllRows'

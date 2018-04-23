@@ -12,6 +12,8 @@ requiredFields = [('mongo_id', 'STRING', '31'),
                   ('gageNumber', 'STRING', '31'),
                   ('gageName', 'STRING', '31'),
                   ('gageType', 'STRING', '63'),
+                  ('lat', 'STRING', '31'),
+                  ('lon', 'STRING', '31'),
                   ('owner', 'STRING', '63'),
                   ('serialNumber', 'STRING', '63'),
                   ('barCode', 'STRING', '31'),
@@ -33,6 +35,8 @@ class Gage(B):
         self.gageNumber =  aDict.get('gageNumber', None)
         self.gageName =  aDict.get('gageName', None)
         self.gageType =  aDict.get('gageType', None)
+        self.lat = float(aDict.get('lat', '0.0'))
+        self.lon = float(aDict.get('lon', '0.0'))
         self.owner =  aDict.get('owner', None)
         self.serialNumber =  aDict.get('serialNumber', None)
         self.barCode =  aDict.get('', None)
@@ -61,15 +65,17 @@ class Gage(B):
 
     @staticmethod
     def getRequiredFieldNames():
-        return [x[0] for x in requiredFields]
+        retList = ['SHAPE@XY']
+        retList.extend([val[0] for val in requiredFields])
+        return retList
 
     def createOrUpdateRow(self):
         '''
         :return: List containing all values of this gage to be
                 used in creating a new gage row.
         '''
-        retList = []
-        for fieldName in Gage.getRequiredFieldNames():
+        retList = [(self.lon, self.lat)] # corresponds to 'SHAPE@XY'
+        for fieldName in Gage.getRequiredFieldNames()[1:]:
             aValue = self.__dict__[fieldName]
             retList.append(aValue)
         return retList
