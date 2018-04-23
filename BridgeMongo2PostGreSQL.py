@@ -294,10 +294,10 @@ def _processMxd(args):
     mxd = arcpy.mapping.MapDocument(mapFileName)
 
     stationsLayer = getLayerByName(mxd, 'Stations')
-    gagesTable = getTableByName(mxd, 'tbl_gages')
+    gagesLayer = getLayerByName(mxd, 'Gages')
 
     bridgeAllJsonDumpsToArcTables(stationsLayer, stationsJsonDump,
-                     gagesTable, gagesJsonDump)
+                                  gagesLayer, gagesJsonDump)
 
 
 if __name__ == '__main__':
