@@ -279,7 +279,8 @@ def _processMxd(args):
 
     # swap the next two lines commented status to test different file sets.
     # frfDir = os.path.join(cwd, 'Data/FRFdata')
-    frfDir = os.path.join(cwd, 'Data/SMS_json_v20180412')
+    # frfDir = os.path.join(cwd, 'Data/SMS_json_v20180412')
+    frfDir = os.path.join(cwd, 'Data/SMS_json_v20180426')
     stationsFname = os.path.join(frfDir, 'stations.json')
 
     stationsJsonDump = os.path.join(testFullPath, stationsFname)
